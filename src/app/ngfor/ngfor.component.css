@@ -1,0 +1,15 @@
+
+ul {
+    padding: 10px;    
+    list-style: none; /* Added list style none */
+    font-size: 20px;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:nth-child(odd) {
+    background-color: #f2f2f2;
+}

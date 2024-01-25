@@ -1,0 +1,16 @@
+<p>rx-js-operators works!</p>
+
+<h4> map </h4>
+<ul>
+    <li *ngFor="let senior of seniors$ | async">
+        {{ senior.name }} - {{ senior.age }}
+    </li>
+</ul>
+
+<!-- 
+<h4> switch map </h4>
+<ul>
+    <li *ngFor="let senior of seniorsWithSwitchMap$ | async">
+        {{ senior.name }} - {{ senior.age }}
+    </li>
+</ul> -->

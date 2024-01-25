@@ -1,0 +1,50 @@
+<p>rx-js-maps works!</p>
+<!-- <p>In this demo we have a source of 5 values [0, 4]. Each value has a <b>delay of 1000 ms</b>. This means that the <u>source completes in roughly 1000 ms</u> all together.</p> -->
+
+<br/>
+Transformation operators
+<button (click)="testMergeMap()">Merge Map</button>
+<button (click)="testSwitchMap()">Switch Map</button>
+<button (click)="testConcatMap()">Concat Map</button>
+<button (click)="testexhaustMap()">Exhaust Map</button>
+<button (click)="testMergeScan()">Merge scan</button>
+<button (click)="testSwitchScan()">Switch scan</button>
+
+<br/>
+
+Join operators
+<button (click)="testMergeAll()">Merge All</button>
+<button (click)="testSwitchAll()">Switch All</button>
+<button (click)="testConcatAll()">Concat All</button>
+<button (click)="testExhaustAll()">Exhaust All</button>
+<button (click)="exampleCombineLatestAll()">Combine Latest All</button>
+
+<br/>
+
+Join creation operators
+<button (click)="testZip()">Zip</button>
+<button (click)="testRace()">Race</button>
+<button (click)="testForkJoin()">Fork Join</button>
+<button (click)="partition()">Partition</button>
+<br/>
+
+<ul>
+    <li *ngFor="let n of numbers">
+        {{n}}
+    </li>
+</ul>
+
+{{completed}}
+
+<br/>
+
+<input type="text" (keyup)="onKeyUp($event)"/> 
+<button (click)="onButtonClick()">Submit something once</button>
+
+<br/>
+
+<button (click)="onWithLatestFromClick()">WithLastestFrom</button>
+
+<br/>
+
+<button (click)="onCombineLatestButonClick()">CombineLatestWith</button>
