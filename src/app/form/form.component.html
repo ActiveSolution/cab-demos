@@ -1,0 +1,18 @@
+<p>form works!</p>
+
+<form [formGroup]="form">
+  <div>
+    <input type="text" formControlName="name" />
+    <small *ngIf="form.get('name')?.hasError('minlength')"
+      >Name does not meet length reqirement</small>
+    <small *ngIf="form.get('name')?.hasError('required')"
+      >Name is req.</small>
+
+      <small *ngIf="form.get('name')?.hasError('invalidName')"
+      >Name must be Andreas</small>
+  </div>
+
+  <input type="text" formControlName="city" />
+</form>
+
+<button (click)="onSubmit()">Submit</button>
