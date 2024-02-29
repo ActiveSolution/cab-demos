@@ -19,6 +19,6 @@ export class PageOneComponent {
   }
 
   onNavigate() {
-    this.router.navigate(['/two'], { relativeTo: this.route});
+    this.router.navigate(['two'], { relativeTo: this.route});
   }
 }
